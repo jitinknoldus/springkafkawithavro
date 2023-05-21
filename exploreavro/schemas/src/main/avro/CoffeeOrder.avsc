@@ -1,0 +1,40 @@
+{
+  "name": "CoffeeOrder",
+  "namespace": "org.knoldus.domain.generated",    //the different namespace will specify the avro generated avro classes
+  "type": "record",
+  "fields": [
+    {
+      "name": "id",
+      "type": "int"
+    },
+    {
+      "name": "name",
+      "type": "string"
+    },
+    {
+      "name": "nickname",
+      "type": "string",
+      "default": "",
+      "doc": "Optional field represents the nickname of the user "
+    },
+    {
+      "name": "store",
+      "type": "Store"
+    },
+    {
+      "name": "orderLineItems",
+      "type": {
+        "type": "array",
+        "items": {
+          "name": "orderLineItem",
+          "type": "OrderLineItem"
+        }
+      }
+    },
+    {
+      "name": "status",
+      "type": "string"
+    }
+
+  ]
+}

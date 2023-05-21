@@ -1,0 +1,16 @@
+{
+  "name": "Store",
+  "namespace": "org.knoldus.domain.generated",    //the different namespace will specify the avro generated avro classes
+  "type": "record",
+  "fields": [
+    {
+      "name": "id",
+      "type": "int"
+    },
+    {
+      "name": "address",
+      "type": "Address"
+    }
+
+  ]
+}
